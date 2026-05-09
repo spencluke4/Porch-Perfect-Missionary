@@ -24,7 +24,7 @@
       --color-primary-soft: #d8f0ee; --color-success: #3f6d33; --color-error: #9b2c2c; --color-inverse: #fffaf5;
       --shadow-sm: 0 8px 24px rgba(27, 46, 49, 0.12); --shadow-lg: 0 18px 45px rgba(27, 46, 49, 0.16);
       --radius-sm: 0.5rem; --radius-md: 0.85rem; --radius-lg: 1.25rem; --radius-full: 9999px;
-      --font-display: 'Instrument Serif', Georgia, serif; --font-body: 'Work Sans', Arial, sans-serif; --content: 1180px;
+      --font-display: 'Instrument Serif', Georgia, serif; --font-body: 'Work Sans', Arial, sans-serif; --content: 100%;
     }
     [data-theme="dark"] {
       --color-bg: #141715; --color-surface: #1f2322; --color-surface-2: #252a29; --color-border: #3a4442;
@@ -43,7 +43,7 @@
     button, input, select, textarea { font: inherit; }
     .skip-link { position: absolute; left: 1rem; top: -40px; background: var(--color-primary); color: var(--color-inverse); padding: .75rem 1rem; border-radius: .5rem; z-index: 20; }
     .skip-link:focus { top: 1rem; }
-    .container { width: min(calc(100% - 2rem), var(--content)); margin: 0 auto; }
+    .container { width: 100%; max-width: 100%; margin: 0 auto; padding: 0 1rem; }
     .site-header { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(14px); background: color-mix(in srgb, var(--color-bg) 82%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent); }
     .nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0; }
     .brand { display:flex; align-items:center; gap:.75rem; text-decoration:none; }
