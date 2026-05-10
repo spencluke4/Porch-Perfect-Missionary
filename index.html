@@ -134,7 +134,7 @@
         <div>
           <span class="eyebrow">Missionary porch setup</span>
           <h1>Request a Porch Perfect missionary porch.</h1>
-          <p>Use this page to share all the details needed for a missionary-themed porch: key dates, mission information, garage door type, and whether you want a front-door poster. Your request sends directly to the owner and can also log into a live Google Sheet for order tracking.</p>
+          <p>Use this page to share all the details needed for a missionary-themed porch: key dates, mission information, garage door type, and whether you want a front-door poster.</p>
 
     </section>
 
@@ -143,7 +143,7 @@
         <section class="panel">
           <div class="section-header">
             <h2>Missionary order form</h2>
-            <p>Submitting this form sends a missionary porch request email and can append the order into a Google Sheet for tracking and totals.</p>
+            <p>Submitting this form sends your missionary porch request.</p>
           </div>
           
           <form id="orderForm">
@@ -237,7 +237,7 @@
                 <div>
                   <label for="friendsCode">Friends & family code (optional)</label>
                   <input id="friendsCode" name="friendsCode" type="text" placeholder="Optional private code" />
-                  <span class="hint">This code is for private discounts and is not advertised on the page.</span>
+                  <span class="hint">This code is for private discounts</span>
                 </div>
               </div>
               <div>
@@ -248,7 +248,7 @@
 
             <div class="summary-box">
               <div><strong>Package price note:</strong> $150 base service for the missionary porch setup (plus any agreed travel or add-on fees).</div>
-              <div><strong>Live tracking:</strong> Each order can be recorded in a Google Sheet with totals by missionary garage type and poster preference.</div>
+        
             </div>
 
             <div id="statusMessage" class="status-message" role="status" aria-live="polite"></div>
@@ -259,27 +259,7 @@
             </div>
           </form>
         </section>
-
-        <aside class="panel">
-          <div class="section-header">
-            <h2>Order dashboard</h2>
-            <p>This panel shows the latest totals returned from your Google Apps Script web app once you connect it.</p>
-          </div>
-          <div class="dashboard-grid">
-            <div class="metric"><span>Total missionary orders</span><strong id="metricOrders">0</strong></div>
-            <div class="metric"><span>Single garage doors</span><strong id="metricSingle">0</strong></div>
-            <div class="metric"><span>Double garage doors</span><strong id="metricDouble">0</strong></div>
-            <div class="metric"><span>Posters requested</span><strong id="metricPoster">0</strong></div>
-          </div>
-          <div class="totals-grid" id="totalsGrid">
-            <div class="total-chip"><span>Metal doors</span><strong>0</strong></div>
-            <div class="total-chip"><span>Wood doors</span><strong>0</strong></div>
-            <div class="total-chip"><span>Not sure</span><strong>0</strong></div>
-          </div>
-          <div class="setup-box">
-            Paste your Google Apps Script web app URL into the <code>APPS_SCRIPT_URL</code> value in the script section of this file. The script handles appending each order and returning updated totals.</div>
-        </aside>
-      </div>
+    </div>
     </section>
 
     <section class="section">
